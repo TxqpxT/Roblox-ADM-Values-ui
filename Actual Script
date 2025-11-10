@@ -35,48 +35,4 @@ local Window = Rayfield:CreateWindow({
       Key = {"Hello"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
    }
 })
-
 Rayfield:LoadConfiguration()
-
--- Create main categories/tabs if needed
-local MainTab = Window:CreateTab("Main", 4483362458) -- Example main tab
-
--- Existing content can go here
-
--- Create a new tab for "Elvebredd"
-local ElvebreddTab = Window:CreateTab("Elvebredd", 4483362458)
-local ElvebreddSection = ElvebreddTab:CreateSection("Elvebredd Subcategory")
-
--- Add buttons or other UI elements inside Elvebredd section
-ElvebreddSection:CreateButton({
-    Name = "Elvebredd Action 1",
-    Callback = function()
-        print("Elvebredd Action 1 triggered")
-    end
-})
-
-ElvebreddSection:CreateButton({
-    Name = "Elvebredd Action 2",
-    Callback = function()
-        print("Elvebredd Action 2 triggered")
-    end
-})
-
--- Create a new tab for "ADM Trading Values"
-local ADMTab = Window:CreateTab("ADM Trading Values", 4483362458)
-local ADMSection = ADMTab:CreateSection("ADM Trading Values Subcategory")
-
--- Add buttons or other UI elements inside ADM Trading Values section
-ADMSection:CreateButton({
-    Name = "ADM Action 1",
-    Callback = function()
-        print("ADM Action 1 triggered")
-    end
-})
-
-ADMSection:CreateButton({
-    Name = "ADM Action 2",
-    Callback = function()
-        print("ADM Action 2 triggered")
-    end
-})
